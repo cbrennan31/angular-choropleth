@@ -1,18 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<svg [attr.width]="width" [attr.height]="height" *ngIf="counties && data">
-  <g *ngFor="let county of counties">
-    <path
-      [attr.fill]="color(data.get(county.id))"
-      [attr.d]="path(county)">
-    </path>
-    <title>{{ format(data.get(county.id)) }}</title>
-  </g>
-  <path [attr.fill]="'none'"
-    [attr.stroke]="'white'"
-    [attr.stroke-linejoin]="'round'"
-    [attr.d]="path(states)"
-  ></path>
-</svg>
-
+<svg></svg>
 
 <router-outlet></router-outlet>
